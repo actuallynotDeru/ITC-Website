@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #85A98F;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Header {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav .menu {
+    display: flex;
+    list-style: none;
+}
+
+nav .menu li {
+    margin-left: 1rem;
+}
+
+nav .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav .menu a:hover {
+    color: black;
+}
+
+
+
+main {
+    max-width: 1200px;
+    margin: 6rem auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: white;
+    padding: 4rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    width: 100%;
+}
+
+.about-left img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-right {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-right h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #85A98F;
+}
+
+.about-right p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+.about-right a {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+    font-size: 1rem;
+}
+
+.about-right a:hover {
+    border-bottom: 2px solid #85A98F;
+}
+
+@media (max-width: 1024px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .about-left img {
+        max-width: 400px;
+    }
+
+    .about-right h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .about-content {
+        padding: 5rem;
+    }
+
+    .about-right h1 {
+        font-size: 3rem;
+    }
+
+    .about-left img {
+        max-width: 600px;
+    }
+}
